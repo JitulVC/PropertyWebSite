@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% block content %}   
+      <!-- wedo  section -->
+      <div class="wedo ">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Ongoing Projects</h2>
+                     <p>A trusted partner creating quality spaces for the community to work, live and play</p>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-10 offset-md-1">
+                  <div class="row">
+                     <div class="col-md-6 margin_bottom">
+                        <div class="work">
+                           <figure><img src="{{pdata[0]['ImgURL']}}" alt="#" /></figure>
+                        </div>
+                        <div class="work_text">
+                           <h3>{{pdata[0]['ProjName']}}<br><span class="blu">{{pdata[0]['TOPYear']}}</span></h3>
+                        </div>
+                     </div>
+                     <div class="col-md-6 margin_bottom">
+                        <div class="work">
+                           <figure><img src="{{pdata[1]['ImgURL']}}" alt="#" /></figure>
+                        </div>
+                        <div class="work_text">
+                           <h3>{{pdata[1]['ProjName']}}<br><span class="blu">{{pdata[1]['TOPYear']}}</span></h3>
+                        </div>
+                     </div>
+                     <div class="col-md-6 margin_bottom">
+                        <div class="work">
+                           <figure><img src="{{pdata[2]['ImgURL']}}" alt="#" /></figure>
+                        </div>
+                        <div class="work_text">
+                           <h3>{{pdata[2]['ProjName']}}<br> <span class="blu">{{pdata[2]['TOPYear']}}</span></h3>
+                        </div>
+                     </div>
+                     <div class="col-md-6 margin_bottom">
+                        <div class="work">
+                           <figure><img src="{{pdata[3]['ImgURL']}}" alt="#" /></figure>
+                        </div>
+                        <div class="work_text">
+                           <h3>{{pdata[3]['ProjName']}}<br><span class="blu">{{pdata[3]['TOPYear']}}</span></h3>
+                        </div>
+                     </div>
+                  </div>
+                  <a class="read_more" href="#">See More</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end wedo  section -->    
+{% endblock %}
